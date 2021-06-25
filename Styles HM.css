@@ -1,0 +1,482 @@
+/*
+1. Posicionamiento
+2. Modelo de caja
+3. Tipografia
+4. Visuales
+5. Otros
+*/  
+:root{
+    /* Colores */
+    --bitcoin-orange: #F7931A;
+    --soft-orange: #FFE9D5;
+    --secondary-blue: #1A9AF7;
+    --soft-blue:  #E7F5FF;
+    --warm-black: #201E1C;
+    --black: #282623;
+    --grey: #BABABA;  
+    --off-white: #FAF8F7;
+    --just-white: #FFFFFF;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif; 
+}
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+    background: linear-gradient(207.8deg, #ffd3e5 15.69%, #f6658a 100%);
+}
+header img{
+    height: 110px;
+    margin-top: 35px;
+    align-self: center;
+}
+.header--title-container{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 10px;
+    text-align: center;
+    align-self: center;
+}
+.header--title-container h1{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+.header--title-container p{
+   margin-top: 15px;
+   font-size: 1.4rem;
+   font-weight: 500;
+   line-height: 1.8rem;
+   color: rgb(253, 223, 223);
+}
+.header--title-container .header--button{
+    position: absolute;
+    left: calc(50% - 118px);
+    top: 270px;
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--off-white);
+    /*Sombra*/
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+}
+.header--button span{
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 9px;
+    background-image: url('./down-arrow.svg');
+}
+main{
+    width: 100%;
+    height: auto;
+    background-color: rgb(253, 218, 223);
+}
+.main-section{
+    width: 100%;
+    height: auto;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.main-text{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.background-img{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    background-image: url(./Blusa-Sol-2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+.main-section h2{
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: rgb(224, 81, 117);
+}
+.main-section p{
+    margin-bottom: 30px;
+    margin-left: 7px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: black;
+}
+.main-section .p2{
+    margin-bottom: 2px;
+    margin-left: 7px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: black;
+}
+.main-countries-table{
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 290px;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+}
+.main-countries-table .countries-table--title{
+   margin-bottom: 15px;
+   font-size: 1.8rem;
+   font-weight: bold;
+   line-height: 2.3rem;
+   color: rgb(246, 153, 169);
+   text-align: center;
+}
+.countries-table--container{
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 200px;
+    margin: 0 auto;
+}
+.countries-table--container table{
+    width: 100%;
+    height: 100%;
+}
+.countries-table--container td{
+    width: 50%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.7rem;
+    color: black;
+    background-color: var(--just-white);
+    text-align: center;
+}
+.countries-table--container .table__top-left{
+    border-radius: 15px 0 0 0;
+}
+.countries-table--container .table__top-right{
+    border-radius: 0 15px 0  0;
+}
+.countries-table--container .table__bottom-left{
+    border-radius: 0  0 0 15px;
+}
+.countries-table--container .table__bottom-right{
+    border-radius: 0  0 15px 0;
+}
+.countries-table--container .table__right{
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: #000000;
+}
+.main-product-detail{
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: rgb(223, 80, 104);
+}
+.product-detail--title{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+}
+.product-detail--title h2{
+    margin: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+.product-detail--title p{
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: black;
+}
+.product-detail--card{
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 135px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: rgb(228, 101, 122);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+.product--card-title{
+    margin-top: 8px;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: rgb(255, 255, 255);
+}
+.product--card-body{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: rgb(250, 232, 232);
+}
+.Compra-ya{
+    width: 100%;
+    min-width: 320px;
+    height: 400px;
+    background-image: url("Blusa.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.Compra-ya h2{
+    padding-left: 45px;
+    padding-top: 300px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: black;
+}
+.bitcoin-img-container h2{
+    padding-top: 60px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+.main-plans-container{
+    width: 100%;
+    min-width: 320px;
+    text-align: center;
+    padding-bottom: 70px;
+}
+.main-plans-container .plans--title{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.plans--title h2{
+    padding-top: 50px;
+    margin: 5px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+.plans--title p{
+    margin: 10px;
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+}
+.plans-container--card{
+    position: relative;
+    width: 70%;
+    min-width: 190px;
+    max-width: 300px;
+    height: 270px;
+    margin: 20px 10px 0 50px;
+    padding: 0 15px;   
+    background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+.plans-container--card-1{
+    position: relative;
+    width: 70%;
+    min-width: 190px;
+    max-width: 300px;
+    height: 270px;
+    margin: 20px 30px 0;
+    padding: 0 15px;   
+    background: linear-gradient(207.8deg, #f062a9 15.69%, #ffc2da 100%);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+.plans-container--card-2{
+    position: relative;
+    width: 70%;
+    min-width: 190px;
+    max-width: 300px;
+    height: 270px;
+    margin: 20px 50px 0 0;
+    padding: 0 15px;   
+    background: linear-gradient(207.8deg, #af0057 15.69%, #ffc4f5 100%);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+.recomendado{
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    padding: 6px;
+    left: calc(50% - 60px);
+    top: -15px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    background-color: rgb(255, 190, 217);
+    color: var(--just-white);
+    border-radius: 8px;
+}
+.plus{
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    padding: 6px;
+    left: calc(50% - 60px);
+    top: -15px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    background-color: rgb(255, 146, 191);
+    color: var(--just-white);
+    border-radius: 8px;
+}
+.plus-max{
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    padding: 6px;
+    left: calc(50% - 60px);
+    top: -15px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    background-color: rgb(253, 86, 156);
+    color: var(--just-white);
+    border-radius: 8px;
+}
+.plan-card--title{
+    padding-top: 30px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+
+.plan-card--price, .plan-card--price-1, .plan-card--price-2{
+    padding: 5px 0;
+    margin-bottom: 5px;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 6.3rem;
+}
+.plan-card--price span{
+    position: absolute;
+    top: 40px;
+    right: 95px;
+    left: 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.plan-card--price-1 span{
+    position: absolute;
+    top: 40px;
+    right: 79px;
+    left: 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.plan-card--price-2 span{
+    position: absolute;
+    top: 40px;
+    right: 110px;
+    left: 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.plan-card--saving{
+    font-size: 1.3rem;
+    color: #000000;
+}
+.plan-card--saving-1{
+    font-size: 1.3rem;
+    color: #1f0404;
+}
+.plan-card--saving-2{
+    font-size: 1.3rem;
+    color: #fffefe;
+}
+.plan-card--call{
+    width: 150px;
+    height: 48px;
+    margin-top: 25px;
+    background-color: #faf8f7;
+    border: 2px solid rgb(255, 191, 221);
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+    font-family: 'DM Sans', sans-serif;
+}
+.plans-container--slider{
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+footer{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: rgb(253, 190, 214);
+}
+.footer section{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.right img{
+    width: 180px;
+    height: 90px;
+    margin-right: 20px;
+}
+.desordenada{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+.desordenada li{
+    margin: 10px 0;
+    text-decoration: none;
+    color: var(--just-white);
+}
